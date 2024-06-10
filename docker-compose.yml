@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    image: 'docker-spring-boot-postgres:latest'
+    build:
+      context: .
+    container_name: fitnesstracker
+    depends_on:
+      - db
+    environment:
+      - POSTGRES_USER=postgresuser
+      - POSTGRES_PASSWORD=mysecretpassword
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/fitnesstrackerdb
+      - SPRING_DATASOURCE_USERNAME=postgresuser
+      - SPRING_DATASOURCE_PASSWORD=mysecretpassword
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+
+    ports:
+      - "8080:8080"
+
+  db:
+    image: postgres
+    container_name: fitnesstrackerdb
+    environment:
+      - POSTGRES_USER=postgresuser
+      - POSTGRES_PASSWORD=mysecretpassword
+      - POSTGRES_DB=fitnesstrackerdb
+    ports:
+      - "5433:5432"
