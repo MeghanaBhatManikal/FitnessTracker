@@ -5,8 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FitenessTracker {
+public class FitnessTracker {
     public static void main(String[] args){
-        SpringApplication.run(FitenessTracker.class, args);
+        SpringApplication.run(FitnessTracker.class, args);
     }
 }

@@ -28,6 +28,28 @@ Epics
    10. Set up Unit-tests for all the different classes.
 
 ### 2. Fitness Tracker
+   1. User
+      CreateUser
+      ListUsers
+      GetUserById
+      DeleteUserById
+      UpdateUser
+   2. Workout
+      BeginWorkout -> Creates a new entry in Workout Table
+      EndWorkout -> Updates the entry with the end time
+      DeleteWorkout
+      GetAllWorkoutByUser
+      DeleteWorkoutByWorkoutId
+      DeleteWorkoutsByUserId
+
+
+// Workout
+id,
+userId,
+beginTime,
+endTime,
+type ( enum -> walk, hike, run, swim ),
+
 
 
       

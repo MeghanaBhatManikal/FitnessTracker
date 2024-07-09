@@ -16,14 +16,14 @@ public class OpenAPIConfiguration {
     public OpenAPI defineOpenApi() {
         Server server = new Server();
         server.setUrl("http://localhost:8080");
-        server.setDescription("Fiteness Tracker API Documentation");
+        server.setDescription("Fitness Tracker API Documentation");
 
         Contact myContact = new Contact();
         myContact.setName("Meghana Bhat");
         myContact.setEmail("your.email@gmail.com");
 
         Info information = new Info()
-                .title("Fiteness Tracker API")
+                .title("Fitness Tracker API")
                 .version("1.0")
                 .description("This API exposes endpoints to manage fitness tracker APIs.")
                 .contact(myContact);
