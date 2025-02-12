@@ -7,3 +7,7 @@
 docker-compose up --build
 
 This creates/restores fitnesstrackerdb (Postgres DB) and starts running fitnesstracker ( Spring Boot project ) 
+
+
+#### Swagger
+http://localhost:8080/swagger-ui/index.html

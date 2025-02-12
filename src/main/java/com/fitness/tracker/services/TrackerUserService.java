@@ -23,7 +23,6 @@ public class TrackerUserService {
         TrackerUser savedUser = trackerUserRepo.save(trackerUser);
         log.info("User with id: {} saved successfully", savedUser.getId());
         return savedUser;
-
     }
     public List<TrackerUser> getAllUsers(){
         return trackerUserRepo.findAll();
